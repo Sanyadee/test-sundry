@@ -391,6 +391,18 @@ footer {
     width: 100%;
     justify-content: center;
   }
+  .whole div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer img {
+    max-width: 100%;
+    height: auto;
+  }
+  .get {
+    margin-left: 35%;
+  }
 
   .case-content img,
   .case-text {
