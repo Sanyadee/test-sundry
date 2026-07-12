@@ -4,220 +4,180 @@
   line-height: 1;
   box-sizing: border-box;
 }
+
 ul,
 li {
   list-style: none;
 }
-h2 {
-  font-family: "Radio Canada Big", sans-serif;
-}
-.nav-links > li {
-  font-family: "Radio Canada Big", sans-serif;
-}
-header {
-  h1 {
-    font-family: "Source Serif 4", serif;
-  }
-  h2 {
-    font-family: "Radio Canada Big", sans-serif;
-  }
-  p {
-    font-family: "Source Serif 4", serif;
-  }
-}
-.feature-button {
-  a {
-    font-family: "Geist Mono", monospace;
-  }
-}
-.journal-text {
-  font-family: "Radio Canada Big", sans-serif;
-}
-.lower-journal {
-  font-family: "Geist Mono", monospace;
-}
-.journal-list > a {
-  font-family: "Geist Mono", monospace;
-}
-.testimonial-bottom-first {
-  font-family: "Radio Canada Big", sans-serif;
-}
-.testimonial-bottom-second {
-  font-family: "Source Serif 4", serif;
-}
-.call-to-action {
-  h4 {
-    font-family: "Radio Canada Big", sans-serif;
-  }
-  a {
-    font-family: "Geist Mono", monospace;
-  }
-}
-footer {
-  font-family: "Radio Canada Big", sans-serif;
-  color: #66640f;
-}
-.case-text {
-  h2 {
-    font-family: "Radio Canada Big", sans-serif;
-  }
-  p {
-    font-family: "Source Serif 4", serif;
-  }
-  a {
-    font-family: "Geist Mono", monospace;
-  }
-}
-.cards {
-  h2 {
-    font-family: "Radio Canada Big", sans-serif;
-  }
-  p {
-    font-family: "Source Serif 4", serif;
-  }
-}
-.value-header {
-  .value1 {
-    font-family: "Source Serif 4", serif;
-  }
-  .value2 {
-    font-family: "Radio Canada Big", sans-serif;
-  }
-}
-.features-header {
-  font-family: "Radio Canada Big", sans-serif;
-}
-.intro-buttons {
-  li {
-    font-family: "Geist Mono", monospace;
-  }
-}
+
 a {
   text-decoration: none;
 }
+
+h2,
+.nav-links > li,
+.journal-text,
+.testimonial-bottom-first,
+footer,
+.features-header,
+.cards h2,
+.case-text h2,
+.call-to-action h4,
+.value-header .value2 {
+  font-family: "Radio Canada Big", sans-serif;
+}
+
+header h1,
+header p,
+.testimonial-bottom-second,
+.case-text p,
+.cards p,
+.value-header .value1 {
+  font-family: "Source Serif 4", serif;
+}
+
+.feature-button a,
+.lower-journal,
+.journal-list > a,
+.call-to-action a,
+.case-text a,
+.intro-buttons li {
+  font-family: "Geist Mono", monospace;
+}
+
 .nav-logo {
   max-width: 122px;
 }
-header {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    background-attachment: fixed;
-    padding: 20px;
-  }
-  p {
-    font-size: 20px;
-  }
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background-attachment: fixed;
+  padding: 20px;
 }
+
+header p {
+  font-size: 20px;
+}
+
 .nav-links {
   display: flex;
   gap: 20px;
-  a {
-    color: black;
-  }
 }
+
+.nav-links a,
+nav a,
+footer a {
+  color: black;
+}
+
 .gradient-bg {
   background-image: linear-gradient(to bottom, #a8d3ff, #fff4df);
   max-height: 818px;
   padding: 20px;
 }
+
 .intro-section {
   padding-top: 140px;
-  header {
-    text-align: center;
-    h1 {
-      font-weight: normal;
-      font-size: 80px;
-    }
-    h2 {
-      font-size: 80px;
-      font-weight: normal;
-    }
-  }
 }
+
+.intro-section header {
+  text-align: center;
+}
+
+.intro-section header h1,
+.intro-section header h2 {
+  font-weight: normal;
+  font-size: 80px;
+}
+
 .intro-buttons {
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 16px;
   margin-block: 32px;
-  li {
-    background-color: black;
-    padding: 16px;
-  }
-  a {
-    color: white;
-  }
-  a::before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    aspect-ratio: 1;
-    background-color: white;
-    margin-right: 5px;
-  }
 }
-.hero-image {
+
+.intro-buttons li,
+.feature-button,
+.call-to-action a {
+  background-color: black;
+  padding: 16px;
+}
+
+.intro-buttons a,
+.feature-content a,
+.call-to-action a,
+.case-text a,
+.blog-section a {
+  color: white;
+}
+
+.intro-buttons a::before,
+.feature-content a::before,
+.call-to-action a::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  aspect-ratio: 1;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.hero-image,
+.case-study-section {
   display: flex;
   justify-content: center;
-  img {
-    max-width: 100%;
-  }
 }
+
+.hero-image img,
+.feature-image img,
+.journal img,
+footer img {
+  max-width: 100%;
+}
+
 .features-section {
   padding-block: 120px;
-  header {
-    margin-bottom: 40px;
-  }
 }
+
+.features-section header {
+  margin-bottom: 40px;
+}
+
 .features-header {
   text-align: center;
   font-weight: 500;
   font-size: 40px;
 }
-.feature-image {
-  img {
-    max-width: 100%;
-  }
-}
+
 .feature-content {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.feature-content {
-  .feature-button {
-    background-color: black;
-    padding: 16px;
-  }
-  a {
-    color: white;
-  }
-  a::before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    aspect-ratio: 1;
-    background-color: white;
-    margin-right: 5px;
-  }
-}
+
 .value-section {
   padding-block: 120px;
   background-image: url(./img/value-background.png);
 }
+
 .value-header {
   text-align: center;
   margin-bottom: 40px;
-  h2 {
-    font-weight: normal;
-    font-size: 80px;
-  }
 }
+
+.value-header h2 {
+  font-weight: normal;
+  font-size: 80px;
+}
+
 .value-cards {
   display: flex;
   gap: 16px;
 }
+
 .cards {
   display: grid;
   gap: 24px;
@@ -225,19 +185,25 @@ header {
   padding: 40px;
   border-radius: 16px;
   background-color: white;
-  h2 {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  p {
-    font-weight: normal;
-  }
 }
-.case-study-section {
+
+.cards h2,
+.case-text h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cards p,
+.case-text p {
+  font-weight: normal;
+}
+
+.case-study-section,
+.testimonial,
+.call-to-action {
   padding-block: 120px;
-  display: flex;
-  justify-content: center;
 }
+
 .case-content {
   max-width: 903px;
   display: flex;
@@ -247,53 +213,56 @@ header {
   border-radius: 16px;
   background-color: #f6f8fb;
   align-items: center;
-  img {
-    max-width: 498px;
-  }
 }
+
+.case-content img {
+  max-width: 498px;
+}
+
 .case-text {
   max-width: 403px;
-  h2 {
-    margin-bottom: 16px;
-    font-weight: 500;
-    font-size: 20px;
-  }
-  p {
-    margin-bottom: 32px;
-    font-weight: normal;
-    font-size: 20px;
-  }
-  a {
-    padding: 12px;
-    color: white;
-    background-color: black;
-  }
 }
-.blog-section {
+
+.case-text h2 {
+  margin-bottom: 16px;
+}
+
+.case-text p {
+  margin-bottom: 32px;
+  font-size: 20px;
+}
+
+.case-text a,
+.blog-section a {
+  padding: 12px;
+  background-color: black;
+}
+
+.blog-section,
+.journal-list,
+.call-to-action {
   display: grid;
   justify-content: center;
-  h2 {
-    text-align: center;
-    font-weight: 500px;
-    font-size: 40px;
-    margin-bottom: 40px;
-  }
-  a {
-    background-color: black;
-    color: white;
-    padding: 12px;
-    text-align: center;
-  }
 }
+
+.blog-section h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.blog-section a {
+  text-align: center;
+}
+
 .journal {
   display: flex;
   gap: 16px;
   border-block: 1px solid #dbe0ec;
   padding-block: 24px;
-  img {
-    max-width: 100%;
-  }
 }
+
 .lower-journal {
   display: flex;
   gap: 16px;
@@ -301,248 +270,218 @@ header {
   margin-top: 8px;
   color: #6c6c6c;
 }
+
 .journal-list {
   max-width: 620px;
 }
-.journal-text {
+
+.journal-text,
+.testimonial-bottom-first,
+.testimonial-bottom-second {
   font-weight: 500;
   font-size: 20px;
 }
-.testimonial {
-  padding-block: 120px;
-}
+
 .testimonial-content {
   display: flex;
   gap: 16px;
   align-items: center;
-
-  img {
-    max-width: 612px;
-  }
 }
+
+.testimonial-content img {
+  max-width: 612px;
+}
+
 .testimonial-word {
   display: grid;
   gap: 56px;
-  h2 {
-    font-weight: 500;
-    font-size: 40px;
-  }
 }
+
+.testimonial-word h2,
+.call-to-action h4 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
 .testimonial-bottom-first {
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
 }
-.testimonial-bottom-second {
-  font-weight: 500;
-  font-size: 20px;
+
+.testimonial-bottom-second,
+.lower-journal {
   color: #6c6c6c;
 }
+
 .call-to-action {
-  padding-block: 120px;
   background-color: #f6f8fb;
-  display: grid;
   text-align: center;
-  justify-content: center;
   gap: 32px;
-  a {
-    text-align: center;
-    color: white;
-    background-color: black;
-    padding: 16px;
-    justify-self: center;
-    width: fit-content;
-  }
-  a::before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    aspect-ratio: 1;
-    background-color: white;
-    margin-right: 5px;
-  }
-  h4 {
-    font-weight: 500;
-    font-size: 40px;
-  }
 }
+
+.call-to-action a {
+  justify-self: center;
+  width: fit-content;
+}
+
 footer {
   padding: 20px;
   display: grid;
   gap: 20px;
   background-color: #fff546;
-  img {
-    max-width: 100%;
-  }
+  color: #66640f;
 }
+
 .whole {
   display: flex;
   justify-content: space-between;
-  div {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  }
 }
+
+.whole div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .one {
   text-align: center;
 }
+
 @media screen and (max-width: 767px) {
   .feature-content {
     display: grid;
   }
-  .intro-section {
-    header {
-      display: grid;
-      justify-content: center;
-      h1 {
-        font-size: 36px;
-        font-weight: 500;
-      }
-      h2 {
-        font-size: 36px;
-        font-weight: 500;
-      }
-      p {
-        font-size: 18px;
-      }
-    }
+
+  .intro-section header {
+    display: grid;
+    justify-content: center;
   }
-  header {
-    .nav-links {
-      display: none;
-    }
+
+  .intro-section header h1,
+  .intro-section header h2 {
+    font-size: 36px;
+    font-weight: 500;
   }
-  .intro-header {
-    h1 {
-      font-size: 36px;
-    }
-    h2 {
-      font-size: 36px;
-    }
+
+  .intro-section header p {
+    font-size: 18px;
   }
-  .intro-buttons {
+
+  header .nav-links {
+    display: none;
+  }
+
+  .intro-header h1,
+  .intro-header h2 {
+    font-size: 36px;
+  }
+
+  .intro-buttons,
+  .value-cards,
+  .case-content,
+  .testimonial-content {
     display: grid;
   }
-  .value-cards {
-    display: grid;
+
+  .value-header h2 {
+    font-size: 36px;
   }
-  .value-header {
-    h2 {
-      font-size: 36px;
-    }
+
+  .case-content a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
-  .case-content {
-    display: grid;
-  }
-  .case-content {
-    a {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    }
-    img {
-      width: 295px;
-    }
-  }
+
+  .case-content img,
   .case-text {
     width: 295px;
   }
-  .testimonial-content {
-    display: grid;
-    img {
-      max-width: 335px;
-    }
+
+  .testimonial-content img {
+    max-width: 335px;
   }
-  .testimonial-word {
-    h2 {
-      font-size: 24px;
-    }
+
+  .testimonial-word h2,
+  .call-to-action h4 {
+    font-size: 24px;
   }
-  .call-to-action {
-    h4 {
-      font-size: 24px;
-    }
-  }
+
   .whole {
     display: grid;
     justify-content: center;
     gap: 20px;
-    div {
-      display: flex;
-      justify-content: space-between;
-    }
   }
-  footer {
-    p {
-      text-align: center;
-    }
+
+  .whole div {
+    display: flex;
+    justify-content: space-between;
   }
+
+  footer p {
+    text-align: center;
+  }
+
   nav {
     padding: 20px;
-    a {
-      color: black;
-    }
   }
+
+  .journal-list {
+    display: grid;
+    justify-content: center;
+  }
+
   .journal-list a {
     display: block;
     width: 100%;
     justify-content: center;
     margin-top: 30px;
   }
-  .journal-list {
-    display: grid;
-    justify-content: center;
-  }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .nav-links {
-    span {
-      display: none;
-    }
+  .nav-links span {
+    display: none;
   }
+
   .feature-content {
     display: grid;
   }
-  header {
-    h1 {
-      font-size: 64px;
-    }
+
+  header h1 {
+    font-size: 64px;
   }
-  .call-to-action {
-    h4 {
-      font-size: 32px;
-    }
+
+  .call-to-action h4 {
+    font-size: 32px;
   }
+
+  .journal-list {
+    display: grid;
+    justify-content: center;
+  }
+
   .journal-list a {
     display: block;
     width: 100%;
     justify-content: center;
     margin-top: 30px;
   }
-  .journal-list {
-    display: grid;
-    justify-content: center;
-  }
 }
+
 @media screen and (min-width: 1024px) {
-  .nav-links {
-    span {
-      display: none;
-    }
+  .nav-links span {
+    display: none;
   }
+
   .testimonial-text {
     padding-inline: 105px;
   }
-  footer {
-    a {
-      color: black;
-    }
-  }
+
   .journal-list {
     display: grid;
     justify-content: center;
   }
+
   .journal-list a {
     display: inline-flex;
     margin-top: 30px;
@@ -550,19 +489,27 @@ footer {
     margin-left: 40%;
   }
 }
-/* .blog-section a {
-  display: inline-flex;
-  width: fit-content;
-  align-self: flex-start;
-}
-.blog-section {
-  display: grid;
-  justify-content: center;
-} */
 
 @media (max-width: 600px) {
   .journal-list a {
     width: 100%;
     justify-content: center;
+  }
+}
+
+.nav-links {
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  a span {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  a span img {
+    display: block;
   }
 }
