@@ -13,7 +13,9 @@ li {
 a {
   text-decoration: none;
 }
-
+p {
+  font-family: "Source Serif 4", serif;
+}
 h2,
 .nav-links > li,
 .journal-text,
@@ -60,9 +62,6 @@ header p,
   mask-size: 100% 100%;
 }
 
-nav {
-  align-items: center;
-}
 .nav-logo {
   max-width: 122px;
 }
@@ -72,6 +71,7 @@ header nav {
   justify-content: space-between;
   background-attachment: fixed;
   padding: 20px;
+  align-items: center;
 }
 
 header p {
@@ -159,24 +159,43 @@ footer img {
 
 .features-section {
   padding-block: 140px;
+  min-width: 100%;
 }
 
 .features-section header {
   margin-bottom: 40px;
 }
-
+.feature-button {
+  margin-top: 30px;
+  a {
+    display: inline-block;
+  }
+}
 .features-header {
   text-align: center;
   font-weight: 500;
   font-size: 40px;
 }
-
 .feature-content {
   display: flex;
-  align-items: center;
   gap: 40px;
+  max-width: 100%;
 }
-
+.feature-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  span {
+    color: #6c6c6c;
+  }
+  p {
+    font-weight: 900;
+  }
+}
+.feature-border {
+  border-block: 1px solid #dbe0ec;
+  padding-block: 25px;
+}
 .value-section {
   padding-block: 120px;
   background-image: url(./img/value-background.png);
@@ -465,6 +484,9 @@ footer {
   .ic--baseline-plus {
     display: inline-block;
   }
+  .feature-button > a {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -516,6 +538,9 @@ footer {
     margin-top: 30px;
     width: fit-content;
     margin-left: 40%;
+  }
+  .feature-journal {
+    width: 45%;
   }
 }
 
