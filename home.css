@@ -372,6 +372,7 @@ footer {
 .whole {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .whole div {
