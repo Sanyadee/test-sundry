@@ -13,7 +13,8 @@ li {
 a {
   text-decoration: none;
 }
-p {
+p,
+.h1 {
   font-family: "Source Serif 4", serif;
 }
 h2,
@@ -26,11 +27,11 @@ footer,
 .case-text h2,
 .call-to-action h4,
 .value-header .value2,
-a {
+a,
+.h2 {
   font-family: "Radio Canada Big", sans-serif;
 }
 
-header h1,
 header p,
 .testimonial-bottom-second,
 .case-text p,
@@ -69,9 +70,16 @@ header p,
 header nav {
   display: flex;
   justify-content: space-between;
-  background-attachment: fixed;
   padding: 20px;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  button {
+    background: none;
+    border: none;
+  }
 }
 
 header p {
@@ -81,6 +89,8 @@ header p {
 .nav-links {
   display: flex;
   gap: 20px;
+  align-items: center;
+  margin-left: auto;
 }
 #nav-a {
   color: black;
@@ -93,15 +103,16 @@ footer a {
 }
 
 .gradient-bg {
-  background-image: linear-gradient(to bottom, #a8d3ff, #fff4df);
+  background-image: linear-gradient(to bottom, #a8d3ffbf, #fff4df, #ffffffbf);
   padding: 20px;
 }
 
 .intro-section-heading {
   padding-top: 140px;
   text-align: center;
-  display: grid;
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   h1 {
     display: grid;
   }
@@ -117,7 +128,6 @@ footer a {
   justify-content: center;
   text-align: center;
   gap: 16px;
-  margin-block: 32px;
 }
 
 a {
@@ -133,15 +143,23 @@ a {
   color: white;
 }
 
+.intro-buttons a,
+.feature-button a,
+.call-to-action a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
 .intro-buttons a::before,
-.feature-content a::before,
+.feature-button a::before,
 .call-to-action a::before {
   content: "";
   display: inline-block;
-  width: 8px;
-  aspect-ratio: 1;
+  width: 4px;
+  height: 4px;
   background-color: white;
-  margin-right: 10px;
 }
 
 .hero-image,
@@ -159,7 +177,10 @@ footer img {
 
 .features-section {
   padding-block: 140px;
-  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 20px;
 }
 
 .features-section header {
@@ -167,6 +188,8 @@ footer img {
 }
 .feature-button {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
   a {
     display: inline-block;
   }
@@ -180,6 +203,7 @@ footer img {
   display: flex;
   gap: 40px;
   max-width: 100%;
+  justify-content: center;
 }
 .feature-top {
   display: flex;
@@ -199,6 +223,7 @@ footer img {
 .value-section {
   padding-block: 120px;
   background-image: url(./img/value-background.png);
+  padding-inline: 20px;
 }
 
 .value-header {
@@ -214,6 +239,7 @@ footer img {
 .value-cards {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 
 .cards {
@@ -251,6 +277,7 @@ footer img {
   border-radius: 16px;
   background-color: #f6f8fb;
   align-items: center;
+  padding-inline: 20px;
 }
 
 .case-content img {
@@ -268,6 +295,10 @@ footer img {
 .case-text p {
   margin-bottom: 32px;
   font-size: 20px;
+}
+
+.blog-section {
+  padding-inline: 20px;
 }
 
 .case-text a,
@@ -300,6 +331,10 @@ footer img {
   border-block: 1px solid #dbe0ec;
   padding-block: 24px;
 }
+.journal-img {
+  position: absolute;
+  top: -60px;
+}
 
 .lower-journal {
   display: flex;
@@ -311,6 +346,13 @@ footer img {
 
 .journal-list {
   max-width: 620px;
+  position: relative;
+}
+
+.journal-img {
+  position: absolute;
+  right: 500px;
+  top: -100px;
 }
 
 .journal-text,
@@ -320,10 +362,15 @@ footer img {
   font-size: 20px;
 }
 
+.testimonial {
+  padding-inline: 20px;
+}
+
 .testimonial-content {
   display: flex;
   gap: 16px;
   align-items: center;
+  justify-content: center;
 }
 
 .testimonial-content img {
@@ -367,6 +414,9 @@ footer {
   gap: 20px;
   background-color: #fff546;
   color: #66640f;
+  img {
+    width: 100%;
+  }
 }
 
 .whole {
@@ -502,6 +552,27 @@ footer {
   .feature-button > a {
     width: 100%;
   }
+  .journal-img {
+    display: none;
+  }
+  .nav-links.is-open {
+    display: flex;
+    margin-top: -20px;
+    margin-right: -45px;
+    flex-direction: column;
+    background-color: white;
+    z-index: 3;
+  }
+  nav.menu-open .nav-logo {
+    display: none;
+  }
+  .page-overlay.is-visible {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -555,7 +626,7 @@ footer {
     margin-left: 40%;
   }
   .feature-journal {
-    width: 45%;
+    max-width: 507px;
   }
 }
 

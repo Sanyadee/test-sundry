@@ -26,13 +26,13 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="gradient-bg">
+    <header>
       <nav>
         <div>
           <a href="#" id="nav-a">
             <img
               class="nav-logo"
-              src="./img/Logo-container.png"
+              src="./img/atherfield.svg"
               alt="Company logo"
             />
           </a>
@@ -48,31 +48,38 @@
             <span><img src="./img/Nav-rrow.png" alt="" /></span>
           </a>
         </div>
-        <span class="ic--baseline-plus"></span>
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="ic--baseline-plus"></span>
+        </button>
       </nav>
-
-      <div class="intro-section-heading">
-        <h1>
-          <span class="h1">Sustainability insights,</span>
-          <span class="h2">built for business</span>
-        </h1>
-
-        <p>
-          Track impact, reduce emissions, and accelerate progress—with clarity
-          and confidence.
-        </p>
-        <div class="intro-buttons">
-          <a href="#">Request a demo</a>
-          <a href="#">Explore the platform</a>
-        </div>
-        <div class="hero-image">
-          <img
-            src="./img/Hero image.png"
-            alt="Sustainability platform preview"
-          />
-        </div>
-      </div>
     </header>
+
+    <div class="page-overlay"></div>
+
+    <div class="intro-section-heading gradient-bg">
+      <h1>
+        <span class="h1">Sustainability insights,</span>
+        <span class="h2">built for business</span>
+      </h1>
+
+      <p>
+        Track impact, reduce emissions, and accelerate progress—with clarity and
+        confidence.
+      </p>
+      <div class="intro-buttons">
+        <a href="#">Request a demo</a>
+        <a href="#">Explore the platform</a>
+      </div>
+      <div class="hero-image">
+        <img src="./img/Hero image.png" alt="Sustainability platform preview" />
+      </div>
+    </div>
     <!-- features section -->
     <div class="features-section">
       <header>
@@ -186,6 +193,7 @@
     <section class="blog-section">
       <h2>From the journal</h2>
       <div class="journal-list">
+        <img class="journal-img" src="./img/Sticker container.png" alt="" />
         <div class="journal">
           <img src="./img/journalImg1.png" alt="" />
           <div>
@@ -271,5 +279,6 @@
       <img src="./img/Footer-image.png" alt="" />
       <img src="./img/Logo-container.png" alt="" />
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
